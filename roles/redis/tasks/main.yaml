@@ -1,7 +1,4 @@
-- name: redis Installation
-  hosts: redis
-  become: yes
-  tasks:
+
   - name: Installing repo file
     ansible.builtin.dnf:
       name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
